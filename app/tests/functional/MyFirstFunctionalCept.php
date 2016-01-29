@@ -1,3 +1,5 @@
 <?php 
 $I = new FunctionalTester($scenario);
-$I->wantTo('perform actions and see result');
+$I->wantTo('verify the home page');
+$I->amOnPage('/');
+$I->see('hello there');
